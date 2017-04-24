@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<tree string="Attendance">
+    <field name="employee"/>
+    <field name="on_leave"/>
+    <field name="date"/>
+    <field name="in_time"/>
+    <field name="out_time"/>
+    <field name="period"/>
+    <field name="is_holiday"/>
+    <field name="leave_application"/>
+</tree>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<form string="Employee Leave Configuration">
+    <group string="Probation Staff" id="sepr_probation" colspan="4"/>
+        <label name="probation_cl"/>
+        <field name="probation_cl"/>
+        <label name="probation_sl"/>
+        <field name="probation_sl"/>
+        <label name="probation_el"/>
+        <field name="probation_el"/>
+        <label name="probation_dl"/>
+        <field name="probation_dl"/>
+        <label name="probation_pl"/>
+        <field name="probation_pl"/>
+        <label name="probation_al"/>
+        <field name="probation_al"/>
+    </group>
+    <group string="Confirmed Staff" id="sepr_confirmed" colspan="4"/>
+        <label name="confirmed_cl"/>
+        <field name="confirmed_cl"/>
+        <label name="confirmed_sl"/>
+        <field name="confirmed_sl"/>
+        <label name="confirmed_el"/>
+        <field name="confirmed_el"/>
+        <label name="confirmed_dl"/>
+        <field name="confirmed_dl"/>
+        <label name="confirmed_pl"/>
+        <field name="confirmed_pl"/>
+        <label name="confirmed_al"/>
+        <field name="confirmed_al"/>
+    </group>
+</form>

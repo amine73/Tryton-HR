@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<data>
+    <xpath expr="/form/label[@name='party']" position="before">
+        <group string="Main Info" yfill="1" col="4" id="main_info">
+            <label name="party"/>
+            <field name="party"/>
+            <newline/>
+            <label name="company"/>
+            <field name="company"/>
+            <label name="department"/>
+            <field name="department"/>
+            <label name="state"/>
+            <field name="state"/>
+            <label name="employee_id"/>
+            <field name="employee_id"/>
+            <label name="types"/>
+            <field name="types"/>
+        </group>
+        <group string="Photo" col="2" id="photo">
+            <field name="photo" widget="image" width="200" height="200"/>
+        </group>
+        <page string="General" col="6" id="general">
+            <label name="first_name"/>
+            <field name="first_name" required="True"/>
+            <label name="middle_name"/>
+            <field name="middle_name"/>
+            <label name="last_name"/>
+            <field name="last_name" required="True"/>
+            <label name="manager"/>
+            <field name="manager" required="True"/>
+            <label name="sex"/>
+            <field name="sex" required="True"/>
+            <newline/>
+            <label name="date_of_birth"/>
+            <field name="date_of_birth" required="True"/>
+            <label name="age"/>
+            <field name="age"/>
+            <label name="place_of_birth"/>
+            <field name="place_of_birth" required="True"/>
+            <label name="marital_status"/>
+            <field name="marital_status" required="True"/>
+            <label name="wedding_date"/>
+            <field name="wedding_date"/>
+            <label name="marriage_license"/>
+            <field name="marriage_license"/>
+            <label name="nationality"/>
+            <field name="nationality" required="True"/>
+            <label name="native_state"/>
+            <field name="native_state"/>
+        </page>
+        <page string="Address" id="address">
+            <label name="permanent_address"/>
+            <field name="permanent_address" required="True"/>
+            <label name="present_address"/>
+            <field name="present_address" required="True"/>
+            <label name="addresses"/>
+            <field name="addresses"/>
+            <label name="contact_mechanisms"/>
+            <field name="contact_mechanisms"/>
+        </page>
+        <page string="Language Skills" id="language_skills">
+            <label name="language_skills"/>
+            <field name="language_skills" colspan="4"/>
+        </page>
+        <page string="Secular Details" id="secular_details">
+            <label name="religion"/>
+            <field name="religion"/>
+            <label name="denomination"/>
+            <field name="denomination"/>
+        </page>
+        <page string="Documents" id="documents">
+            <label name="driving_license"/>
+            <field name="driving_license"/>
+            <label name="driving_license_validity"/>
+            <field name="driving_license_validity"/>
+            <label name="passport_number"/>
+            <field name="passport_number"/>
+            <label name="passport_validity"/>
+            <field name="passport_validity"/>
+        </page>
+        <page string="Academics" id="academics">
+            <field name="academics"/>
+        </page>
+        <page string="Skills" id="skills">
+            <field name="skills"/>
+        </page>
+        <page string="Membership" id="membership">
+            <label name="responsibilities"/>
+            <field name="responsibilities"/>
+            <label name="team"/>
+            <field name="team"/>
+        </page>
+        <page string="Promotions and Transfers" id="transfers">
+            <field name="transfers"/>
+        </page>
+        <page string="Payment Details" id="payment_details">
+            <field name="payment_details" mode="form,tree"
+                view_ids="hr.payment_detail_view_form,hr.payment_detail_view_list"/>
+        </page>
+        <page string="Attendance" id="attendance">
+            <field name="attendance"/>
+        </page>
+        <page string="Leaves" id="leaves">
+            <label name="current_payrollyear"/>
+            <field name="current_payrollyear"/>
+            <newline/>
+            <group string="Leaves" col="6" id="group_leaves">
+                <label name="available_cl"/>
+                <field name="available_cl"/>
+                <label name="available_sl"/>
+                <field name="available_sl"/>
+                <label name="available_el"/>
+                <field name="available_el"/>
+                <label name="available_dl"/>
+                <field name="available_dl"/>
+                <label name="available_pl"/>
+                <field name="available_pl"/>
+                <label name="available_al"/>
+                <field name="available_al"/>
+            </group>
+            <newline/>
+            <field name="leave_applications"/>
+        </page>
+        <page string="history" id="history">
+            <field name="history"/>
+        </page>
+    </xpath>
+    <xpath expr="/form/label[@name='party']" position="replace"/>
+    <xpath expr="/form/field[@name='party']" position="replace"/>
+    <xpath expr="/form/label[@name='company']" position="replace"/>
+    <xpath expr="/form/field[@name='company']" position="replace"/>
+</data>
+

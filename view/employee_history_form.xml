@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<data>
+    <xpath expr="/form/notebook/page[@id='general']/label[@name='age']" position="replace"/>
+    <xpath expr="/form/notebook/page[@id='general']/field[@name='age']" position="replace"/>
+    <xpath expr="/form/notebook/page[@id='address']" position="replace"/>
+    <xpath expr="/form/notebook/page[@id='language_skills']" position="replace"/>
+    <xpath expr="/form/notebook/page[@id='academics']" position="replace"/>
+    <xpath expr="/form/notebook/page[@id='skills']" position="replace"/>
+    <xpath expr="/form/notebook/page[@id='membership']" position="replace"/>
+    <xpath expr="/form/notebook/page[@id='transfers']" position="replace"/>
+    <xpath expr="/form/notebook/page[@id='payment_details']" position="replace"/>
+    <xpath expr="/form/notebook/page[@id='history']" position="replace"/>
+</data>

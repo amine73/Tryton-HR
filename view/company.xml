@@ -1,0 +1,125 @@
+<?xml version='1.0'?>
+ <tryton>
+  <data>
+   <record model='ir.ui.view' id='department_view_list'>
+    <field name='model'>company.department</field>
+    <field name='type'>tree</field>
+    <field name='priority'>10</field>
+    <field name='name'>department_list</field>
+   </record>
+   <record model='ir.ui.view' id='department_view_form'>
+    <field name='model'>company.department</field>
+    <field name='type'>form</field>
+    <field name='name'>department_form</field>
+   </record>
+   <record model='ir.action.act_window' id='act_department_form'>
+    <field name='name'>Departments</field>
+    <field name='res_model'>company.department</field>
+   </record>
+   <record model='ir.action.act_window.view' id='act_department_form_view1'>
+    <field name='sequence' eval='10'/>
+    <field name='view' ref='department_view_list'/>
+    <field name='act_window' ref='act_department_form'/>
+   </record>
+   <record model='ir.action.act_window.view' id='act_department_form_view2'>
+    <field name='sequence' eval='20'/>
+    <field name='view' ref='department_view_form'/>
+    <field name='act_window' ref='act_department_form'/>
+   </record>
+    <menuitem parent='company.menu_company_tree' sequence='30' action='act_department_form' id='menu_department_form'/>
+   <record model='ir.ui.view' id='employee_view_form'>
+    <field name='model'>company.employee</field>
+    <field name='type'>form</field>
+    <field name='name'>employee_form</field>
+   </record>
+   <record model='ir.ui.view' id='employee_language_view_list'>
+    <field name='model'>company.employee.language</field>
+    <field name='type'>tree</field>
+    <field name='priority'>10</field>
+    <field name='name'>employee_language_list</field>
+   </record>
+   <record model='ir.ui.view' id='employee_language_view_form'>
+    <field name='model'>company.employee.language</field>
+    <field name='type'>form</field>
+    <field name='name'>employee_language_form</field>
+   </record>
+   <record model='ir.ui.view' id='employee_academic_view_list'>
+    <field name='model'>company.employee.academic</field>
+    <field name='type'>tree</field>
+    <field name='priority'>10</field>
+    <field name='name'>employee_academic_list</field>
+   </record>
+   <record model='ir.ui.view' id='employee_academic_view_form'>
+    <field name='model'>company.employee.academic</field>
+    <field name='type'>form</field>
+    <field name='name'>employee_academic_form</field>
+   </record>
+   <record model='ir.ui.view' id='employee_payment_detail_view_list'>
+    <field name='model'>company.employee.payment_detail</field>
+    <field name='type'>tree</field>
+    <field name='priority'>10</field>
+    <field name='name'>employee_payment_detail_list</field>
+   </record>
+   <record model='ir.ui.view' id='employee_payment_detail_view_form'>
+    <field name='model'>company.employee.payment_detail</field>
+    <field name='type'>form</field>
+    <field name='name'>employee_payment_detail_form</field>
+   </record>
+   <record model='ir.ui.view' id='employee_transfer_proposal_view_list'>
+    <field name='model'>employee.transfer.proposal</field>
+    <field name='type'>tree</field>
+    <field name='priority'>10</field>
+    <field name='name'>employee_transfer_proposal_list</field>
+   </record>
+   <record model='ir.ui.view' id='employee_transfer_proposal_view_form'>
+    <field name='model'>employee.transfer.proposal</field>
+    <field name='type'>form</field>
+    <field name='name'>employee_transfer_proposal_form</field>
+   </record>
+   <record model='ir.ui.view' id='employee_transfer_remark_view_list'>
+    <field name='model'>employee.transfer.remark</field>
+    <field name='type'>tree</field>
+    <field name='priority'>10</field>
+    <field name='name'>employee_transfer_remark_list</field>
+   </record>
+   <record model='ir.ui.view' id='employee_transfer_remark_view_form'>
+    <field name='model'>employee.transfer.remark</field>
+    <field name='type'>form</field>
+    <field name='name'>employee_transfer_remark_form</field>
+   </record>
+   <record model='ir.action.act_window' id='act_transfer_proposal_list'>
+    <field name='name'>Promotion Transfer Proposals</field>
+    <field name='res_model'>employee.transfer.proposal</field>
+   </record>
+   <record model='ir.action.act_window.view' id='act_transfer_proposal_view_list'>
+    <field name='sequence' eval='10'/>
+    <field name='view' ref='transfer_proposal_view_list'/>
+    <field name='act_window' ref='act_transfer_proposal_list'/>
+   </record>
+   <record model='ir.action.act_window.view' id='act_transfer_proposal_view_form'>
+    <field name='sequence' eval='20'/>
+    <field name='view' ref='transfer_proposal_view_form'/>
+    <field name='act_window' ref='act_transfer_proposal_list'/>
+   </record>
+     <menuitem name='Promotion Transfer Proposals' parent='menu_hr' sequence='10' id='menu_hr_transfer_proposal'/>
+     <menuitem parent='menu_hr_transfer_proposal' sequence='10' action='act_transfer_proposal_list' id='menu_hr_transfer_proposal_list'/>
+   <record model='ir.sequence.type' id='sequence_type_employee'>
+     <field name='name'>Employee</field>
+     <field name='code'>company.employee</field>
+   </record>
+   <record model='ir.sequence' id='sequence_employee'>
+     <field name='name'>Employee</field>
+     <field name='code'>company.employee</field>
+   </record>
+   <record model='ir.ui.view' id='employee_history_view_list'>
+    <field name='model'>company.employee.history</field>
+    <field name='type'>tree</field>
+    <field name='name'>employee_history_list</field>
+   </record>
+   <record model='ir.ui.view' id='employee_history_view_form'>
+    <field name='model'>company.employee.history</field>
+    <field name='type'>form</field>
+    <field name='name'>employee_history_form</field>
+   </record>
+  </data>
+ </tryton>

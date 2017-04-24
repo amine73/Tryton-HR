@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<form string="Attendance">
+    <label name="employee"/>
+    <field name="employee"/>
+    <label name="on_leave"/>
+    <field name="on_leave"/>
+    <label name="date"/>
+    <field name="date"/>
+    <newline/>
+    <label name="in_time"/>
+    <field name="in_time"/>
+    <label name="out_time"/>
+    <field name="out_time"/>
+    <label name="period"/>
+    <field name="period"/>
+    <label name="is_holiday"/>
+    <field name="is_holiday"/>
+    <label name="leave_application"/>
+    <field name="leave_application"/>
+</form>

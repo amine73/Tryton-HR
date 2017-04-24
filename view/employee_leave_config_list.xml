@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<tree string="Employee Leave Configuration">
+    <field name="probation_cl"/>
+    <field name="probation_sl"/>
+    <field name="probation_el"/>
+    <field name="probation_dl"/>
+    <field name="probation_pl"/>
+    <field name="probation_al"/>
+    <field name="confirmed_cl"/>
+    <field name="confirmed_sl"/>
+    <field name="confirmed_el"/>
+    <field name="confirmed_dl"/>
+    <field name="confirmed_pl"/>
+    <field name="confirmed_al"/>
+</tree>

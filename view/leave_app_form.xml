@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!-- This file is part of Tryton.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<form string="Leave Application">
+    <label name="employee"/>
+    <field name="employee"/>
+    <label name="leave_type"/>
+    <field name="leave_type"/>
+    <label name="from_date"/>
+    <field name="from_date"/>
+    <label name="to_date"/>
+    <field name="to_date"/>
+    <separator name="reason" colspan="4"/>
+    <field name="reason"/>
+        <group  colspan="4" id="leave_app_buttons">
+            <button string="Apply" icon="tryton-executable" name="review"/>
+            <button string="Approve" icon="tryton-ok" name="approve"/>
+            <button string="Deny" icon="tryton-cancel" name="deny"/>
+        </group>
+    <label name="state"/>
+    <field name="state" colspan="3"/>
+</form>
