@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<tryton>
+    <data>
+        <!-- Leave Configuration -->
+        <record model="ir.ui.view" id="employee_leave_configuration_view_list">
+            <field name="model">employee.leave.configuration</field>
+            <field name="type">form</field>
+            <field name="priority">10</field>
+            <field name="name"> employee_leave_config_list</field>
+        </record>
+        <record model="ir.ui.view" id="employee_leave_configuration_view_form">
+            <field name="model">employee.leave.configuration</field>
+            <field name="type">form</field>
+            <field name="priority">20</field>
+            <field name="name"> employee_leave_config_form</field>
+        </record>
+        <record model="ir.action.act_window" id="act_employee_leave_configuration_form">
+            <field name="name">Employee Leave Configuration</field>
+            <field name="res_model">employee.leave.configuration</field>
+        </record>
+        <record model="ir.action.act_window.view" id="act_employee_leave_configuration_view1">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="employee_leave_configuration_view_list"/>
+            <field name="act_window" ref="act_employee_leave_configuration_form"/>
+        </record>
+        <record model="ir.action.act_window.view" id="act_employee_leave_configuration_view2">
+            <field name="sequence" eval="20"/>
+            <field name="view" ref="employee_leave_configuration_view_form"/>
+            <field name="act_window" ref="act_employee_leave_configuration_form"/>
+        </record>
+        <menuitem parent="menu_hr_configuration" sequence="10" action="act_employee_leave_configuration_form" id="menu_leave_config"/>
+    </data>
+</tryton>
